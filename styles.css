@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.tds-icon {
+    width: 35%;
+    height: 35px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 455px) {
+    #menubtn{
+        position: absolute;
+        top: 10px;
+        right: 25px;
+    }
+}
+
+.nav-item {
+    padding: 0 0.5rem;
+    font-size: 14px;
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+
+.nav-item a {
+    color: black;
+    letter-spacing: 1px;
+}
+
+.nav-item a:hover {
+    color: black;
+    background-color: #999999;
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 14px;
+    font-family: 'M PLUS 1', sans-serif;
+}
+
+
+.offcanvas-body a {
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: black;
+    padding: 10px 20px;
+}
+
+.offcanvas-body a:hover {
+    background-color: #EDEDED;
+    border-radius: 6px;
+}
+
+.offcanvas {
+    max-width: 300px;
+    padding: 14px;
+}
+
+section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
+
+.Model1 {
+    background-image: url('images/M3-Homepage-Desktop-LHD_.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Model2 {
+    background-image: url('images/Desktop-ModelY_.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.Model3 {
+    background-image: url('images/Homepage-Model-S.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.Model4 {
+    background-image: url('images/Homepage-Model-X.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.Model5 {
+    background-image: url('images/_25-HP-SolarPanels.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.Model6 {
+    background-image: url('images/solar-roof.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.Model7 {
+    background-image: url('images/accessories.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.main-content a {
+    text-decoration: none;
+    color: black;
+}
+
+section .main-content {
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    transition: .2 ease;
+    text-align: center;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+}
+
+section .main-content .buttons a {
+    display: block;
+    color: black;
+    background-color: #eee;
+    padding: 12px 80px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+section .main-content .buttons {
+    display: grid;
+    row-gap: 15px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+section .main-content .buttons a:first-child {
+    background-color: #444;
+    color: white;
+}
+
+@media (min-width:768px) {
+    section .main-content .buttons {
+        max-width: 600px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .Model1 {
+        background-image: url('images/Model-3-Mobile.jpeg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .Model2 {
+        background-image: url('images/model-Y-mobile.jpeg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .Model3 {
+        background-image: url('images/Model-S-Mobile.jpeg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .Model4 {
+        background-image: url('images/model-X-Mobile.jpeg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .Model5 {
+        background-image: url('images/solar-panel-mobile.jpeg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .Model6 {
+        background-image: url('images/solar-roof-mobile.jpeg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .Model7 {
+        background-image: url('images/accessories-mobile.jpeg');
+        background-size: cover;
+        background-position: center center;
+    }
+
+}
+
+
+.Model7 .main-content {
+    display: grid;
+    grid-template-rows: auto min-content;
+}
+
+.Model7 .main-content .button a {
+    background-color: black;
+    color: white;
+    padding: 12px 80px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.main-content p {
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.offcanvas-backdrop.show {
+    opacity: 1;
+    background-color: rgba(15, 23, 42, .5);
+    backdrop-filter: blur(5px);
+}
